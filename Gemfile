@@ -6,4 +6,6 @@ gem 'cucumber', ' 5.2'
 gem 'capybara', '3.36'
 gem 'selenium-webdriver',  ' 3.142.7'
 gem 'rspec', ' 3.10'
+gem 'faker', ' 2.14'
+
 
