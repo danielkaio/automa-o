@@ -1,3 +1,5 @@
+require 'mongo'
+
 Dado('que acesso a página de cadastro') do
    visit  "http://localhost:3000/signup"
    sleep 5
@@ -5,8 +7,11 @@ Dado('que acesso a página de cadastro') do
 end
 
 Quando('submeto o meu cadastro completo') do
-  find("#fullName").set "Carlos sergio"
-  find("#email").set Faker::Internet.free_email #=> "freddy@gmail.com"
+  client = Mongo::Client.new('mongodb://rocklov-db:27017/rocklov')
+  users = collection = client[:users]
+  result = collection.delete_many({ email:"dani.ajala@yahoo.com"})
+  find("#fullName").set "daniel"
+  find("#email").set "dani.ajala@yahoo.com"
   find("#password").set "12345@"
   click_button"Cadastrar"
   
