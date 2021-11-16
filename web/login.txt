@@ -1,3 +1,4 @@
+@language:pt
 Cenario: Login do usuário
 
     Dado que acesso a página principal
