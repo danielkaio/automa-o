@@ -1,0 +1,35 @@
+
+- title: senha incorreto
+  payload:
+    email: dani.ajala@yahoo.com
+    password: 1234@
+  code: 401
+  error: Unauthorized
+- title: usuario nao existe
+  payload:
+    email: 404.ajala@yahoo.com
+    password: 1234@
+  code: 401
+  error: Unauthorized
+- title: email em branco
+  payload:
+    email: ''
+    password: 1234@
+  code: 412
+  error: required email
+- title: sem o campo email
+  payload:
+    password: 1234@
+  code: 412
+  error: required email
+- title: senha em branco
+  payload:
+    email: 404.ajala@yahoo.com
+    password: ''
+  code: 412
+  error: required password
+- title: sem o campo senha
+  payload:
+    email: 404.ajala@yahoo.com
+  code: 412
+  error: required password
