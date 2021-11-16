@@ -12,6 +12,5 @@ class Sessions
                 "Content-Type":"application/json",
             },
         )
-   end
-     end
-    
+      end
+    end

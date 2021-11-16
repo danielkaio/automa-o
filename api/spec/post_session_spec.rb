@@ -21,8 +21,8 @@ it "valida status code" do
 
 it "valida id do usuario"  do
     expect(@result.parsed_response["error"]).to eql  "Unauthorized"
-end
-end
+    end
+  end
 end
  
 
@@ -46,8 +46,8 @@ context "senha invalida" do
   
   it "valida id do usuario"  do
       expect(@result.parsed_response["error"]).to eql  "Unauthorized"
-  end
-  end
-  end
+     end
+    end
+   end
    
   
