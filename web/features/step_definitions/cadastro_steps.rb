@@ -17,7 +17,7 @@ Quando('submeto o meu cadastro completo') do
 end
   
 Então('sou redirecionado para o Dashboard') do
-  expect(page).to have_css ".dashboard"
+  expect(page).to have_css ".content"
   sleep 10
   
 end
