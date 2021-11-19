@@ -1,10 +1,11 @@
 
-require "httparty"
-class Sessions
+require_relative "base_api"
+
+class Sessions < BaseApi
    
-    include HTTParty
+   
     def login(payload)   
-    return self.class.post("http://rocklov-api:3333/sessions",
+    return self.class.post("/sessions",
             body:payload.to_json,
             headers:{
                 "Content-Type":"application/json",
