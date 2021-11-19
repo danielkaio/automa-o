@@ -9,7 +9,7 @@ describe "POST /sessions" do
 
   before(:all) do
       
-  payload = {email:"dani.ajala@yahoo.com",password:"12345@"}
+  payload = { name:'daniel',email:"dani.ajala@yahoo.com",password:"12345@"}
   @result = Sessions.new.login(payload)
         
   end
@@ -25,9 +25,12 @@ it "valida status code   " do
 it "valida id do usuario" do
        
   expect(@result.parsed_response["error"]) == "Unauthorized "
-end
-end
-end
+   end
+  end
+
+ 
+
+  end
  
 
 
@@ -115,15 +118,6 @@ examples = Helpers::get_fixture("login")
       expect(@result.parsed_response["error"]).to eql  "Unauthorized"
      end
     end
-   
-
-
-
-  
-   
-  
-
-  
   end
 
 
