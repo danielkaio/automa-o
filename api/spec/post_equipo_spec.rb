@@ -1,6 +1,8 @@
 require_relative "routes/equipos"
 require_relative "routes/sessions"
 require_relative "libs/mongo"
+require_relative "helpers"
+
 
 describe "POST /equipos" do
 
@@ -10,11 +12,10 @@ describe "POST /equipos" do
     context "novo equipo" do
         
         before(:all) do
-            thumbnail = File.open(File.join(Dir.pwd,"spec/fixtures/image","kramer.jpg"),"rb")
-
+         
 
             payload = { 
-                thumbnail:thumbnail, 
+                thumbnail:   Helpers::get_thumb("kramer.jpg"),
                 name:"kramer", 
                 category: "corda" , 
                 price:299,
@@ -34,15 +35,14 @@ describe "POST /equipos" do
         context "sem autorização" do
         
             before(:all) do
-                thumbnail = File.open(File.join(Dir.pwd,"spec/fixtures/image","violino.jpg"),"rb")
-    
-    
+            
                 payload = { 
-                    thumbnail:thumbnail, 
+                    thumbnail: Helpers::get_thumb("kramer.jpg"), 
                     name:"baixo", 
                     category: "corda" , 
                     price:59,
                 }
+    
     
               
     
