@@ -23,34 +23,32 @@ describe "GET/equipos {equipos_id}" do
         before(:all) do
             
             @payload = { 
-                thumbnail:   Helpers::get_thumb("violino.jpg"),
-                name:"violino", 
-                category: "outros" , 
-                price:900,
+                thumbnail:   Helpers::get_thumb("kramer.jpg"),
+                name:"kramer", 
+                category: "audio" , 
+                price:200,
             }
 
             equipo =  Equipos.new.create(@payload,@user_id)
             @equipos_id = equipo.parsed_response["_id"]
-           @result = Equipos.new.find_by_id(@equipos_id,@user_id)
+           @result = Equipos.new.remove_by_id(@equipos_id,@user_id)
 
         end
 
-        it "deve retornar 200" do
-            expect(@result.code) == 200
+        it "deve retornar 204" do
+            expect(@result.code) == 204
         end
 
-        it "deve retornar nome do campo" do
-            
-        end
+       
      
     end
 
     context "equipo não existe"do
         before(:all) do
-          @result =  Equipos.new.find_by_id(MongoDB.new.get_mongo_id,@user_id)
+          @result =  Equipos.new.remove_by_id(MongoDB.new.get_mongo_id,@user_id)
         end
-        it "deve retornar 404"do
-            
+        it "deve retornar 204"do
+        expect(@result.code) == 204
         end
     end
 end
