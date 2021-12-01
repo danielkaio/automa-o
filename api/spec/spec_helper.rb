@@ -17,6 +17,14 @@ RSpec.configure do |config|
   
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
+  config.before(:suite) do
+    users = [
+      {
+        name:"carlos", email:"carlos@yahoo.com", password:'12345@'
+      }
+    ]
+  end
+
   
   config.profile_examples = 10
 
