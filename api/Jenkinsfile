@@ -16,9 +16,16 @@ pipeline {
         stage('testing') {
             steps {
                 sh 'cd api && rspec'
-                junit 'api/relatorio/report.xml'
+              
                
             }
+        }
+    }
+     
+    post{
+        always {
+              junit 'api/relatorio/report.xml'
+
         }
     }
 }
