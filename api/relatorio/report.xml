@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="23" skipped="0" failures="0" errors="0" time="0.210416" timestamp="2021-12-01T10:20:21-03:00" hostname="daniel-Inspiron-3583">
+<testsuite name="rspec" tests="23" skipped="0" failures="0" errors="0" time="0.354394" timestamp="2022-01-19T02:35:35-03:00" hostname="daniel-Inspiron-3583">
 <properties>
-<property name="seed" value="2650"/>
+<property name="seed" value="34138"/>
 </properties>
-<testcase classname="spec.get_equipo_spec" name="GET/equipos {equipos_id} unico equipo deve retornar 200" file="./spec/get_equipo_spec.rb" time="0.000314"></testcase>
-<testcase classname="spec.get_equipo_spec" name="GET/equipos {equipos_id} unico equipo deve retornar nome do campo" file="./spec/get_equipo_spec.rb" time="0.000155"></testcase>
-<testcase classname="spec.get_equipo_spec" name="GET/equipos {equipos_id} equipo não existe deve retornar 404" file="./spec/get_equipo_spec.rb" time="0.000256"></testcase>
-<testcase classname="spec.post_equipo_spec" name="POST /equipos novo equipo deve retornar 200" file="./spec/post_equipo_spec.rb" time="0.000179"></testcase>
-<testcase classname="spec.post_equipo_spec" name="POST /equipos novo equipo sem autorização deve retornar 401" file="./spec/post_equipo_spec.rb" time="0.000271"></testcase>
-<testcase classname="spec.post_session_spec" name="login com sucesso POST /sessions valida status code   " file="./spec/post_session_spec.rb" time="0.000186"></testcase>
-<testcase classname="spec.post_session_spec" name="login com sucesso POST /sessions valida id do usuario" file="./spec/post_session_spec.rb" time="0.000385"></testcase>
-<testcase classname="spec.post_session_spec" name="senha incorreto valida id do usuario" file="./spec/post_session_spec.rb" time="0.001869"></testcase>
-<testcase classname="spec.post_session_spec" name="senha incorreto valida status code" file="./spec/post_session_spec.rb" time="0.000286"></testcase>
-<testcase classname="spec.post_session_spec" name="usuario nao existe valida id do usuario" file="./spec/post_session_spec.rb" time="0.000375"></testcase>
-<testcase classname="spec.post_session_spec" name="usuario nao existe valida status code" file="./spec/post_session_spec.rb" time="0.000237"></testcase>
-<testcase classname="spec.post_session_spec" name="email em branco valida id do usuario" file="./spec/post_session_spec.rb" time="0.000413"></testcase>
-<testcase classname="spec.post_session_spec" name="email em branco valida status code" file="./spec/post_session_spec.rb" time="0.000168"></testcase>
-<testcase classname="spec.post_session_spec" name="sem o campo email valida id do usuario" file="./spec/post_session_spec.rb" time="0.000298"></testcase>
-<testcase classname="spec.post_session_spec" name="sem o campo email valida status code" file="./spec/post_session_spec.rb" time="0.000141"></testcase>
-<testcase classname="spec.post_session_spec" name="senha em branco valida id do usuario" file="./spec/post_session_spec.rb" time="0.000393"></testcase>
-<testcase classname="spec.post_session_spec" name="senha em branco valida status code" file="./spec/post_session_spec.rb" time="0.000341"></testcase>
-<testcase classname="spec.post_session_spec" name="sem o campo senha valida id do usuario" file="./spec/post_session_spec.rb" time="0.000272"></testcase>
-<testcase classname="spec.post_session_spec" name="sem o campo senha valida status code" file="./spec/post_session_spec.rb" time="0.000168"></testcase>
-<testcase classname="spec.post_signup_spec" name="POST /signup novo usuario valida status code   " file="./spec/post_signup_spec.rb" time="0.000179"></testcase>
-<testcase classname="spec.post_signup_spec" name="POST /signup novo usuario valida id do usuario" file="./spec/post_signup_spec.rb" time="0.000204"></testcase>
-<testcase classname="spec.post_signup_spec" name="POST /signup usuario já existe deve retornar 409" file="./spec/post_signup_spec.rb" time="0.000177"></testcase>
-<testcase classname="spec.post_signup_spec" name="POST /signup usuario já existe deve retornar mensagem" file="./spec/post_signup_spec.rb" time="0.000211"></testcase>
+<testcase classname="spec.get_equipo_spec" name="GET/equipos {equipos_id} unico equipo deve retornar 200" file="./spec/get_equipo_spec.rb" time="0.000159"></testcase>
+<testcase classname="spec.get_equipo_spec" name="GET/equipos {equipos_id} unico equipo deve retornar nome do campo" file="./spec/get_equipo_spec.rb" time="0.000131"></testcase>
+<testcase classname="spec.get_equipo_spec" name="GET/equipos {equipos_id} equipo não existe deve retornar 404" file="./spec/get_equipo_spec.rb" time="0.000081"></testcase>
+<testcase classname="spec.post_equipo_spec" name="POST /equipos novo equipo deve retornar 200" file="./spec/post_equipo_spec.rb" time="0.000127"></testcase>
+<testcase classname="spec.post_equipo_spec" name="POST /equipos novo equipo sem autorização deve retornar 401" file="./spec/post_equipo_spec.rb" time="0.000187"></testcase>
+<testcase classname="spec.post_session_spec" name="login com sucesso POST /sessions valida status code   " file="./spec/post_session_spec.rb" time="0.000085"></testcase>
+<testcase classname="spec.post_session_spec" name="login com sucesso POST /sessions valida id do usuario" file="./spec/post_session_spec.rb" time="0.000114"></testcase>
+<testcase classname="spec.post_session_spec" name="senha incorreto valida id do usuario" file="./spec/post_session_spec.rb" time="0.025672"></testcase>
+<testcase classname="spec.post_session_spec" name="senha incorreto valida status code" file="./spec/post_session_spec.rb" time="0.000182"></testcase>
+<testcase classname="spec.post_session_spec" name="usuario nao existe valida id do usuario" file="./spec/post_session_spec.rb" time="0.000148"></testcase>
+<testcase classname="spec.post_session_spec" name="usuario nao existe valida status code" file="./spec/post_session_spec.rb" time="0.000060"></testcase>
+<testcase classname="spec.post_session_spec" name="email em branco valida id do usuario" file="./spec/post_session_spec.rb" time="0.000140"></testcase>
+<testcase classname="spec.post_session_spec" name="email em branco valida status code" file="./spec/post_session_spec.rb" time="0.000063"></testcase>
+<testcase classname="spec.post_session_spec" name="sem o campo email valida id do usuario" file="./spec/post_session_spec.rb" time="0.000146"></testcase>
+<testcase classname="spec.post_session_spec" name="sem o campo email valida status code" file="./spec/post_session_spec.rb" time="0.000092"></testcase>
+<testcase classname="spec.post_session_spec" name="senha em branco valida id do usuario" file="./spec/post_session_spec.rb" time="0.000147"></testcase>
+<testcase classname="spec.post_session_spec" name="senha em branco valida status code" file="./spec/post_session_spec.rb" time="0.000070"></testcase>
+<testcase classname="spec.post_session_spec" name="sem o campo senha valida id do usuario" file="./spec/post_session_spec.rb" time="0.000154"></testcase>
+<testcase classname="spec.post_session_spec" name="sem o campo senha valida status code" file="./spec/post_session_spec.rb" time="0.000077"></testcase>
+<testcase classname="spec.post_signup_spec" name="POST /signup novo usuario valida status code   " file="./spec/post_signup_spec.rb" time="0.000291"></testcase>
+<testcase classname="spec.post_signup_spec" name="POST /signup novo usuario valida id do usuario" file="./spec/post_signup_spec.rb" time="0.000324"></testcase>
+<testcase classname="spec.post_signup_spec" name="POST /signup usuario já existe deve retornar 409" file="./spec/post_signup_spec.rb" time="0.000256"></testcase>
+<testcase classname="spec.post_signup_spec" name="POST /signup usuario já existe deve retornar mensagem" file="./spec/post_signup_spec.rb" time="0.000327"></testcase>
 </testsuite>
