@@ -20,23 +20,7 @@ pipeline {
             
         }
 
-        stage('UAT')
-        steps {
-            echo "aguardando teste de aceitação"
-            echo "podemos ir para produção"
-           
-        }
-
-    }
-
-
-       stage('Prod')
-        steps {
-            echo "api pronta para produção"
-            
-        }
-
-    }
+      
      
     post{
         always {
