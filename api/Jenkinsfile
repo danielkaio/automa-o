@@ -13,8 +13,8 @@ pipeline {
         }
         stage('testing') {
             steps {
-                sh 'cd api '
-                sh 'rspec'
+                sh 'cd api && rspec'
+               
             }
         }
     }
