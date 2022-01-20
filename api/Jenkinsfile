@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('prep'){
             steps {
-                sh 'bundle install'
+                sh '  cd api && bundle install'
             }
         }
         stage('testing') {
