@@ -16,11 +16,11 @@ pipeline {
         stage('testing') {
             steps {
                 sh 'cd api && rspec'
+              
+               
             }
-            
         }
-
-      
+    }
      
     post{
         always {
@@ -28,11 +28,4 @@ pipeline {
 
         }
     }
-
-    }
- 
-
-
-
-
-
+}
