@@ -28,7 +28,7 @@ describe "POST /equipos" do
         end
 
         it "deve retornar 200" do
-            expect(@result.cod) == 200
+            expect(@result.code) == 200
         end
 
 
